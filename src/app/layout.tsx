@@ -3,7 +3,10 @@ import "./globals.css";
 
 const APP = process.env.NEXT_PUBLIC_APP_NAME || "منير HQ";
 
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE),
   title: { default: APP, template: `%s · ${APP}` },
   description: "نظام تشغيل الحياة: اهداف، مشاريع، مهام، عادات، وكالندر - في مكان واحد",
   manifest: "/manifest.json",
