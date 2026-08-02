@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink:      #140A18;
+  --color-bg:       #1F0F25;
+  --color-bg2:      #341A3C;
+  --color-panel:    #2A1531;
+  --color-panel2:   #371D41;
+  --color-line:     #4A2A55;
+  --color-accent:   #B98CE6;
+  --color-accent2:  #9D6BE0;
+  --color-mint:     #5EC5C0;
+  --color-amber:    #E0A75E;
+  --color-rose:     #E06C9F;
+  --color-sky:      #7C9CE0;
+  --color-lime:     #6BCB77;
+  --color-txt:      #F3EAF8;
+  --color-mut:      #B79FC4;
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+}
+
+:root { color-scheme: dark; }
+
+* { -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  padding: 0; margin: 0;
+  background: var(--color-bg);
+  color: var(--color-txt);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(900px 600px at 90% -10%, #4A2456 0%, transparent 60%),
+    radial-gradient(700px 500px at 0% 110%, #2C1636 0%, transparent 60%),
+    linear-gradient(160deg, #341A3C 0%, #1F0F25 60%, #170B1C 100%);
+}
+
+::selection { background: var(--color-accent); color: #1A0C1F; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #4A2A55; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #6A3E78; }
+
+/* ------------------------------------------------------- طبقات مساعدة */
+@utility card {
+  background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 1.25rem;
+  backdrop-filter: blur(10px);
+}
+
+@utility chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  padding: .18rem .55rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  border: 1px solid rgba(255,255,255,.13);
+  background: rgba(255,255,255,.05);
+  color: var(--color-mut);
+  white-space: nowrap;
+}
+
+@utility num {
+  direction: ltr;
+  display: inline-block;
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------------- حركات */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fadein { from { opacity: 0 } to { opacity: 1 } }
+@keyframes slidein { from { opacity: 0; transform: translateX(-24px) } to { opacity: 1; transform: none } }
+@keyframes pop { 0% { transform: scale(.9); opacity: 0 } 100% { transform: scale(1); opacity: 1 } }
+
+.rise { animation: rise .5s cubic-bezier(.22,1,.36,1) both; }
+.fadein { animation: fadein .3s ease both; }
+.slidein { animation: slidein .32s cubic-bezier(.22,1,.36,1) both; }
+.pop { animation: pop .22s cubic-bezier(.22,1,.36,1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* ------------------------------------------------------ عناصر مخصصة */
+input, textarea, select, button { font-family: inherit; }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) opacity(.6);
+  cursor: pointer;
+}
+
+.tree-line {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(185,140,230,.35), rgba(185,140,230,.05));
+}
+
+.donut-track { stroke: rgba(255,255,255,.09); }
+
+.hide-scroll::-webkit-scrollbar { display: none; }
+.hide-scroll { scrollbar-width: none; }

@@ -1,0 +1,1166 @@
+{
+ "owner": "منير حبق",
+ "horizon_from": "2026-08-01",
+ "horizon_to": "2026-12-31",
+ "areas": [
+  {
+   "slug": "work",
+   "name": "العملي",
+   "color": "#9D6BE0",
+   "icon": "briefcase",
+   "sort": 0,
+   "branches": "وظيفة + بزنس خاص",
+   "nodes": [
+    {
+     "key": "w1",
+     "title": "سين: الإطلاق والوصول لـ 30-50 عميل",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "note": "دورك كـ CGO: البنية التحتية للنمو + التمويل + الشراكات. ممنوع ذكرها علنا قبل 19 أكتوبر.",
+     "kids": [
+      {
+       "key": "w1a",
+       "title": "البنية التحتية للنمو (كل نقاط تلامس رحلة العميل)",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-09-30",
+       "note": "المرحلة 1 في أغسطس، الاستكمال في سبتمبر",
+       "kids": [
+        {
+         "key": "w1a1",
+         "title": "خريطة رحلة العميل ونقاط التلامس",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-15"
+        },
+        {
+         "key": "w1a2",
+         "title": "قنوات الاكتساب (المرحلة 1)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w1a3",
+         "title": "الانبوردنق والتفعيل",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-15"
+        },
+        {
+         "key": "w1a4",
+         "title": "الاحتفاظ والإحالة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "w1a5",
+         "title": "القياس والتتبع (analytics + لوحات)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        }
+       ]
+      },
+      {
+       "key": "w1b",
+       "title": "حسم التمويل (دعم حكومي أو حاضنة أو جولة)",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-09-30",
+       "note": "أساس بلوكات الحاضنة والمسرعة هو عضوية الكراج",
+       "kids": [
+        {
+         "key": "w1b1",
+         "title": "متابعة وادي جدة والرخصة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w1b2",
+         "title": "التقديم على حاضنة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w1b3",
+         "title": "التقديم على مسرعة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-15"
+        },
+        {
+         "key": "w1b4",
+         "title": "تجهيز ملف المستثمر (ديك + أرقام)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-15"
+        },
+        {
+         "key": "w1b5",
+         "title": "قرار مسار التمويل النهائي",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        }
+       ]
+      },
+      {
+       "key": "w1c",
+       "title": "الكشف العلني 20 أكتوبر",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-10-20",
+       "note": "التلميحات تبدأ 24 سبتمبر",
+       "kids": [
+        {
+         "key": "w1c1",
+         "title": "سردية الكشف",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-20"
+        },
+        {
+         "key": "w1c2",
+         "title": "محتوى الكشف (فيديو + منشورات)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-10"
+        },
+        {
+         "key": "w1c3",
+         "title": "تلميحات ما قبل الكشف",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-24"
+        },
+        {
+         "key": "w1c4",
+         "title": "يوم الإطلاق",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-20"
+        }
+       ]
+      },
+      {
+       "key": "w1d",
+       "title": "الشراكات الاستراتيجية",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "w1d1",
+         "title": "قائمة الشركاء المستهدفين",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-15"
+        },
+        {
+         "key": "w1d2",
+         "title": "أول شراكة موقعة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-31"
+        },
+        {
+         "key": "w1d3",
+         "title": "تفعيل الشراكات (نوفمبر)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-11-30"
+        }
+       ]
+      },
+      {
+       "key": "w1e",
+       "title": "اكتساب العملاء",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "note": "الهدف 30-50 عميل منهم 20-30 دافع",
+       "kids": [
+        {
+         "key": "w1e1",
+         "title": "تجهيز علوي (موردين + عملاء كبار)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w1e2",
+         "title": "أول 10 عملاء",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-11-15"
+        },
+        {
+         "key": "w1e3",
+         "title": "الوصول لـ 30 عميل",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        },
+        {
+         "key": "w1e4",
+         "title": "20 عميل دافع",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "key": "w2",
+     "title": "سند: تأسيس النمو والبنية الكاملة",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "note": "جزئي حتى أكتوبر، دوام كامل نوفمبر وديسمبر (10-13k). المدة مفتوحة لأغسطس 2027.",
+     "kids": [
+      {
+       "key": "w2a",
+       "title": "مركز المساعدة (3 مراحل)",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-10-31",
+       "note": "البلوكات الثلاثة في الكالندر = المرحلة 1 فقط",
+       "kids": [
+        {
+         "key": "w2a1",
+         "title": "المرحلة 1: البلوكات الثلاثة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-20"
+        },
+        {
+         "key": "w2a2",
+         "title": "المرحلة 2",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "w2a3",
+         "title": "المرحلة 3",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-31"
+        }
+       ]
+      },
+      {
+       "key": "w2b",
+       "title": "PLG",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-09-30",
+       "kids": [
+        {
+         "key": "w2b1",
+         "title": "الباقات",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w2b2",
+         "title": "الانبوردنق",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w2b3",
+         "title": "كورس الايميل",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-15"
+        }
+       ]
+      },
+      {
+       "key": "w2c",
+       "title": "بنية النمو الكاملة",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "w2c1",
+         "title": "قنوات الاكتساب",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "w2c2",
+         "title": "التتبع والقياس",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-31"
+        },
+        {
+         "key": "w2c3",
+         "title": "الانتقال لدوام كامل",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-11-01"
+        },
+        {
+         "key": "w2c4",
+         "title": "اكتمال البنية",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "key": "w3",
+     "title": "بيرداي: إغلاق نظيف حتى 18 أكتوبر",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-10-18",
+     "note": "بلا هدف كبير. مهام تنجز فقط. الأرقام الداخلية لا تذكر خارجيا.",
+     "kids": [
+      {
+       "key": "w3a",
+       "title": "المحتوى والتصوير",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-10-18",
+       "kids": [
+        {
+         "key": "w3a1",
+         "title": "كتابة المحتويات",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w3a2",
+         "title": "مواعيد التصوير",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        }
+       ]
+      },
+      {
+       "key": "w3b",
+       "title": "حملة المشاهير",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-09-30"
+      },
+      {
+       "key": "w3c",
+       "title": "مراجعة الإعلانات والميزانية",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-09-30"
+      },
+      {
+       "key": "w3d",
+       "title": "التسليم والتوثيق قبل نهاية العقد",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-10-18"
+      }
+     ]
+    },
+    {
+     "key": "w4",
+     "title": "البراند الشخصي: تواجد بين المؤسسين والمستثمرين",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "note": "المؤشر حاليا: عدد المنشورات + المتابعين + معدل التفاعل. يتطور بداية 2027.",
+     "kids": [
+      {
+       "key": "w4a",
+       "title": "النشر 4 فيديو/أسبوع",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "w4a1",
+         "title": "بدء النشر 3 أغسطس",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-03"
+        },
+        {
+         "key": "w4a2",
+         "title": "أغسطس: 17 فيديو",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w4a3",
+         "title": "سبتمبر: 18 فيديو",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "w4a4",
+         "title": "أكتوبر: أسبوع قصة الإطلاق + تحول لمحتوى سين",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-31"
+        },
+        {
+         "key": "w4a5",
+         "title": "نوفمبر وديسمبر: استمرار",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        }
+       ]
+      },
+      {
+       "key": "w4b",
+       "title": "الإنتاج والمخزون",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-08-31",
+       "note": "المخزون = صمام الأمان. لا تنزل تحت أسبوعين محتوى جاهز.",
+       "kids": [
+        {
+         "key": "w4b1",
+         "title": "كالندر محتوى 8 أشهر",
+         "kind": "task",
+         "status": "done",
+         "due_date": "2026-07-31"
+        },
+        {
+         "key": "w4b2",
+         "title": "تصوير دفعة GTM",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-07",
+         "note": "أول فيديو GTM ينشر 12 أغسطس. آخر وقت للتصوير 6-8 أغسطس."
+        },
+        {
+         "key": "w4b3",
+         "title": "مونتاج متأخرات العقوية",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-09"
+        },
+        {
+         "key": "w4b4",
+         "title": "مراجعة وجدولة الفيديوهات الجاهزة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-08"
+        }
+       ]
+      },
+      {
+       "key": "w4c",
+       "title": "الاستشارات: رحلة بدرية",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-08-31",
+       "kids": [
+        {
+         "key": "w4c1",
+         "title": "الجلسة 1: التشخيص",
+         "kind": "task",
+         "status": "done",
+         "due_date": "2026-07-26"
+        },
+        {
+         "key": "w4c2",
+         "title": "الجلسة 2: الحسم",
+         "kind": "task",
+         "status": "done",
+         "due_date": "2026-08-02"
+        },
+        {
+         "key": "w4c3",
+         "title": "الجلسة 3 + ورقة الاتجاه",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-23"
+        }
+       ]
+      },
+      {
+       "key": "w4d",
+       "title": "قياس البراند",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "w4d1",
+         "title": "تثبيت لوحة قياس (منشورات، متابعين، تفاعل)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "w4d2",
+         "title": "مراجعة شهرية للأرقام",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "health",
+   "name": "الصحي",
+   "color": "#5EC5C0",
+   "icon": "heart-pulse",
+   "sort": 1,
+   "branches": "صحة داخلية + صحة خارجية",
+   "nodes": [
+    {
+     "key": "h1",
+     "title": "الوصول لـ 85 كجم بنسبة دهون 20-22%",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "note": "من 100 كجم، حوالي 3 كجم شهريا. هدف واحد مترابط: نوم + تغذية + تمرين + مكملات.",
+     "kids": [
+      {
+       "key": "h1a",
+       "title": "النوم (الأساس، ابدأ منه)",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-08-31",
+       "note": "النوم هو القيد الأول. كل شي ثاني يتحسن بعده.",
+       "kids": [
+        {
+         "key": "h1a1",
+         "title": "تثبيت وقت استيقاظ ثابت",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-08-09"
+        },
+        {
+         "key": "h1a2",
+         "title": "آخر كافيين قبل الظهر",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-08-09"
+        },
+        {
+         "key": "h1a3",
+         "title": "7+ ساعات، 5 ليال في الأسبوع",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "h1a4",
+         "title": "قطع الشاشات قبل النوم بساعة",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        }
+       ]
+      },
+      {
+       "key": "h1b",
+       "title": "التغذية",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-09-30",
+       "kids": [
+        {
+         "key": "h1b1",
+         "title": "كتابة جدول تغذية",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-16"
+        },
+        {
+         "key": "h1b2",
+         "title": "عجز سعرات معتدل",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "h1b3",
+         "title": "بروتين كاف يوميا",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        }
+       ]
+      },
+      {
+       "key": "h1c",
+       "title": "التمرين",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-09-30",
+       "note": "توقف بسبب حمل سند. نرجعه بالحد الأدنى أولا.",
+       "kids": [
+        {
+         "key": "h1c1",
+         "title": "مشي يومي (الحد الأدنى)",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-08-09"
+        },
+        {
+         "key": "h1c2",
+         "title": "كتابة جدول تمرين",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-16"
+        },
+        {
+         "key": "h1c3",
+         "title": "تمرين قوة 3 مرات أسبوعيا",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        }
+       ]
+      },
+      {
+       "key": "h1d",
+       "title": "المكملات",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-08-31",
+       "note": "معلومات عامة لا نصيحة طبية. التحليل أولا.",
+       "kids": [
+        {
+         "key": "h1d1",
+         "title": "تحليل دم شامل",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-20"
+        },
+        {
+         "key": "h1d2",
+         "title": "جدول مكملات بناء على نتيجة التحليل",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        }
+       ]
+      },
+      {
+       "key": "h1e",
+       "title": "محطات الوزن",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "h1e1",
+         "title": "أغسطس: 97 كجم",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "h1e2",
+         "title": "سبتمبر: 94 كجم",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "h1e3",
+         "title": "أكتوبر: 91 كجم",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-31"
+        },
+        {
+         "key": "h1e4",
+         "title": "نوفمبر: 88 كجم",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-11-30"
+        },
+        {
+         "key": "h1e5",
+         "title": "ديسمبر: 85 كجم @ 20-22% دهون",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "learn",
+   "name": "العلمي",
+   "color": "#E0A75E",
+   "icon": "book-open",
+   "sort": 2,
+   "branches": "تعليم أكاديمي (لاحقا) + تعليم ذاتي",
+   "nodes": [
+    {
+     "key": "l1",
+     "title": "إنهاء مسار Reforge",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-08-15",
+     "note": "لا شي جديد قبل تخطيط 2027.",
+     "kids": [
+      {
+       "key": "l1a",
+       "title": "الثلث الأول من الدروس المتبقية",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-08-06"
+      },
+      {
+       "key": "l1b",
+       "title": "الثلث الثاني",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-08-11"
+      },
+      {
+       "key": "l1c",
+       "title": "الثلث الثالث + الإنهاء",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-08-15"
+      }
+     ]
+    },
+    {
+     "key": "l2",
+     "title": "إنهاء اعتماد John Maxwell",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "kids": [
+      {
+       "key": "l2a",
+       "title": "جلسة أسبوعية ثابتة",
+       "kind": "habit",
+       "status": "todo",
+       "due_date": "2026-12-31"
+      },
+      {
+       "key": "l2b",
+       "title": "إنهاء 75% من الدروس",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-10-31"
+      },
+      {
+       "key": "l2c",
+       "title": "إنهاء الاعتماد",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-12-31"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "social",
+   "name": "الاجتماعي",
+   "color": "#E06C9F",
+   "icon": "users",
+   "sort": 3,
+   "branches": "الأهل + الأصدقاء والشبكة + الحياة العاطفية (لاحقا)",
+   "nodes": [
+    {
+     "key": "s1",
+     "title": "توسيع الشبكة بما يخدم سين",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "note": "متقاطع مع البراند: النشر هو القناة، والتشبيك هو الأثر.",
+     "kids": [
+      {
+       "key": "s1a",
+       "title": "تعارف جديد كل أسبوع",
+       "kind": "habit",
+       "status": "todo",
+       "due_date": "2026-12-31"
+      },
+      {
+       "key": "s1b",
+       "title": "محادثات مع مؤسسين ومستثمرين",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "s1b1",
+         "title": "قائمة 20 اسم مستهدف",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "s1b2",
+         "title": "أول 5 محادثات",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "s1b3",
+         "title": "10 محادثات إضافية بعد الكشف",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        }
+       ]
+      },
+      {
+       "key": "s1c",
+       "title": "تجارب منتجات الأصدقاء",
+       "kind": "task",
+       "status": "todo",
+       "due_date": "2026-08-31"
+      }
+     ]
+    },
+    {
+     "key": "s2",
+     "title": "الأهل",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "kids": [
+      {
+       "key": "s2a",
+       "title": "وقت أسبوعي ثابت مع الأهل",
+       "kind": "habit",
+       "status": "todo",
+       "due_date": "2026-12-31"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "psych",
+   "name": "النفسي",
+   "color": "#7C9CE0",
+   "icon": "brain",
+   "sort": 4,
+   "branches": "ديني + روحي",
+   "nodes": [
+    {
+     "key": "p1",
+     "title": "روتين يحمي الطاقة",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "note": "بلا عادات دينية جديدة. المطلوب حماية الطاقة وسط 4 أدوار.",
+     "kids": [
+      {
+       "key": "p1a",
+       "title": "نصف يوم راحة تام أسبوعيا",
+       "kind": "habit",
+       "status": "todo",
+       "due_date": "2026-12-31"
+      },
+      {
+       "key": "p1b",
+       "title": "عادة يومية 10 دقائق (تأمل أو مشي صامت)",
+       "kind": "habit",
+       "status": "todo",
+       "due_date": "2026-08-31"
+      },
+      {
+       "key": "p1c",
+       "title": "مساءان تعافي بدون شغل",
+       "kind": "habit",
+       "status": "todo",
+       "due_date": "2026-08-31"
+      },
+      {
+       "key": "p1d",
+       "title": "مراجعة أسبوعية يوم السبت (40 دقيقة)",
+       "kind": "habit",
+       "status": "todo",
+       "due_date": "2026-12-31"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "money",
+   "name": "المالي",
+   "color": "#6BCB77",
+   "icon": "wallet",
+   "sort": 5,
+   "branches": "المدخولات + المصروفات",
+   "nodes": [
+    {
+     "key": "m1",
+     "title": "إنهاء السنة بصافي 95k+ ريال",
+     "kind": "goal",
+     "status": "todo",
+     "due_date": "2026-12-31",
+     "note": "المتوقع 94k (راتب سند 10k) لـ 100k (راتب 13k). المستحقات تحسب صافي عند تحصيلها فقط.",
+     "kids": [
+      {
+       "key": "m1a",
+       "title": "تحصيل المستحقات",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "m1a1",
+         "title": "متسلف 6,600",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "m1a2",
+         "title": "متسلف 875",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "m1a3",
+         "title": "مخالصة عصارة 27,000",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-31"
+        },
+        {
+         "key": "m1a4",
+         "title": "متبقي سند 10,000",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-31"
+        },
+        {
+         "key": "m1a5",
+         "title": "مستحقات بيرداي 44,250",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-31"
+        }
+       ]
+      },
+      {
+       "key": "m1b",
+       "title": "تثبيت دخل DDI",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-10-01",
+       "note": "أغسطس وسبتمبر إعادة استثمار، ومن أكتوبر 1000$ بداية كل شهر.",
+       "kids": [
+        {
+         "key": "m1b1",
+         "title": "إعادة استثمار أغسطس وسبتمبر",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "m1b2",
+         "title": "أول دفعة شهرية (أكتوبر)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-10-05"
+        },
+        {
+         "key": "m1b3",
+         "title": "دفعتا نوفمبر وديسمبر",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-05"
+        }
+       ]
+      },
+      {
+       "key": "m1c",
+       "title": "الميزانية والتتبع",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "m1c1",
+         "title": "أول ميزانية شهرية مكتوبة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-09"
+        },
+        {
+         "key": "m1c2",
+         "title": "بدء التتبع الشهري",
+         "kind": "habit",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "m1c3",
+         "title": "تحديد نسبة ادخار ثابتة",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-08-31"
+        },
+        {
+         "key": "m1c4",
+         "title": "مراجعة سبتمبر (بعد دفع الإيجار 10,500)",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        }
+       ]
+      },
+      {
+       "key": "m1d",
+       "title": "الالتزامات المخططة",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "m1d1",
+         "title": "الإيجار 10,500",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-09-30"
+        },
+        {
+         "key": "m1d2",
+         "title": "احتياط النقل 5,350",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        }
+       ]
+      },
+      {
+       "key": "m1e",
+       "title": "إقفال السنة وحساب الصافي",
+       "kind": "project",
+       "status": "todo",
+       "due_date": "2026-12-31",
+       "kids": [
+        {
+         "key": "m1e1",
+         "title": "حساب الصافي الفعلي",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-28"
+        },
+        {
+         "key": "m1e2",
+         "title": "تجهيز خطة 2027",
+         "kind": "task",
+         "status": "todo",
+         "due_date": "2026-12-31"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "milestones": [
+  {
+   "date": "2026-08-07",
+   "title": "آخر موعد لتصوير دفعة GTM"
+  },
+  {
+   "date": "2026-08-15",
+   "title": "إنهاء مسار Reforge"
+  },
+  {
+   "date": "2026-08-20",
+   "title": "ديدلاين المرحلة 1 من مركز المساعدة"
+  },
+  {
+   "date": "2026-09-24",
+   "title": "بدء تلميحات سين"
+  },
+  {
+   "date": "2026-10-18",
+   "title": "نهاية عقد بيرداي"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "كشف سين علنا"
+  },
+  {
+   "date": "2026-11-01",
+   "title": "بداية الدوام الكامل في سند"
+  },
+  {
+   "date": "2026-12-31",
+   "title": "إقفال السنة وحساب الصافي"
+  }
+ ],
+ "archive": [
+  {
+   "date": "يوليو 2026",
+   "area": "العملي",
+   "title": "بنيت نظام بوابة بدرية الكامل + أداة أنماط القرار"
+  },
+  {
+   "date": "أغسطس 2026",
+   "area": "العملي",
+   "title": "كالندر محتوى 8 أشهر جاهز، والنشر يبدأ 3 أغسطس"
+  },
+  {
+   "date": "2026",
+   "area": "العملي",
+   "title": "بيرداي: تحسن يتجاوز 80% في 60 يوم"
+  },
+  {
+   "date": "يوليو 2026",
+   "area": "العملي",
+   "title": "تحدي الكراج مع فريق نخبة (منته)"
+  },
+  {
+   "date": "أغسطس 2026",
+   "area": "العملي",
+   "title": "الجلسة الثانية مع بدرية: حسم الاتجاه"
+  },
+  {
+   "date": "2026",
+   "area": "المالي",
+   "title": "فتحت حساب Invest Saudi (خطوة وادي جدة)"
+  },
+  {
+   "date": "مؤرشف",
+   "area": "العملي",
+   "title": "نموك: مجمد مؤقتا لتخفيف الحمل"
+  }
+ ]
+}

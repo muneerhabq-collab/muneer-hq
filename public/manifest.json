@@ -1,0 +1,31 @@
+{
+  "name": "منير HQ",
+  "short_name": "منير HQ",
+  "description": "نظام تشغيل الحياة - مهام واهداف وعادات وكالندر",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1F0F25",
+  "theme_color": "#1F0F25",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
