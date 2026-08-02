@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    { "path": "/api/cron/daily_digest", "schedule": "0 4 * * *" },
+    { "path": "/api/cron/rollover", "schedule": "30 21 * * *" },
+    { "path": "/api/cron/neglect_nudge", "schedule": "0 5 * * *" },
+    { "path": "/api/cron/weekly_review", "schedule": "0 3 * * 6" },
+    { "path": "/api/cron/snapshot", "schedule": "10 3 * * 6" },
+    { "path": "/api/cron/calendar_sync", "schedule": "0 2 * * *" }
+  ]
+}
