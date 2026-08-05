@@ -23,8 +23,7 @@ export function isLeaf(n: TreeNode) {
 
 /** كل الأوراق (المهام في أدنى مستوى) - هي وحدة القياس */
 export function leaves(n: TreeNode): TreeNode[] {
-  if (n.status === "dropped") return [];
-  if (isLeaf(n)) return [n];
+if (n.status === "dropped" || n.kind === "habit") return [];  if (isLeaf(n)) return [n];
   return n.kids.flatMap(leaves);
 }
 
