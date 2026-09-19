@@ -46,9 +46,13 @@ async function jobCalendarSync(sb: SB) {
   return { users: users.length, synced: n };
 }
 
+/** كم يوم يرجع الترحيل للخلف. اللي اقدم من كذا يظل متأخر عشان يبين على حقيقته. */
+const ROLLOVER_WINDOW_DAYS = 7;
+
 async function jobRollover(sb: SB) {
   const users = await usersFor(sb, "rollover");
   const today = todayISO();
+  const floor = addDays(today, -ROLLOVER_WINDOW_DAYS);
   let moved = 0;
   for (const u of users) {
     const { data } = await sb
@@ -57,13 +61,14 @@ async function jobRollover(sb: SB) {
       .eq("user_id", u)
       .in("status", ["todo", "doing"])
       .lt("due_date", today)
+      .gte("due_date", floor)
       .not("due_date", "is", null);
     const ids = ((data as { id: string }[]) ?? []).map((r) => r.id);
     if (ids.length) {
       await sb.from("nodes").update({ due_date: today }).in("id", ids);
       moved += ids.length;
     }
-    await stamp(sb, "rollover", u, true, `رحلت ${ids.length} مهمة`);
+    await stamp(sb, "rollover", u, true, `رحلت ${ids.length} مهمة (نافذة ${ROLLOVER_WINDOW_DAYS} ايام)`);
   }
   return { moved };
 }
