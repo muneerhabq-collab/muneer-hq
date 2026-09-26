@@ -11,7 +11,7 @@ import Donut from "@/components/Donut";
 import Bar from "@/components/Bar";
 import Empty from "@/components/Empty";
 import Board from "@/components/Board";
-import { statsOf, findNode, flatten, stats } from "@/lib/tree";
+import { statsOf, findNode, flatten, stats, isOpen } from "@/lib/tree";
 import { todayISO, addDays, weekStart } from "@/lib/dates";
 import type { TreeNode } from "@/lib/types";
 
@@ -49,10 +49,10 @@ export default function AreaPage({ params }: { params: Promise<{ slug: string }>
     const fn = (n: TreeNode): boolean => {
       if (f === "all") return true;
       if (f === "done") return n.status === "done";
-      if (f === "open") return n.status !== "done";
-      if (f === "today") return n.status !== "done" && !!n.due_date && n.due_date <= t;
-      if (f === "week") return n.status !== "done" && !!n.due_date && n.due_date <= wEnd;
-      if (f === "over") return n.status !== "done" && !!n.due_date && n.due_date < t;
+      if (f === "open") return isOpen(n);
+      if (f === "today") return isOpen(n) && !!n.due_date && n.due_date <= t;
+      if (f === "week") return isOpen(n) && !!n.due_date && n.due_date <= wEnd;
+      if (f === "over") return isOpen(n) && !!n.due_date && n.due_date < t;
       return true;
     };
     return fn;
