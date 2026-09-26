@@ -8,7 +8,7 @@ import Donut from "@/components/Donut";
 import Bar from "@/components/Bar";
 import LifeWheel from "@/components/LifeWheel";
 import Onboard from "@/components/Onboard";
-import { statsOf, flatten } from "@/lib/tree";
+import { statsOf, flatten, isOpen } from "@/lib/tree";
 import { todayISO, daysUntil, fmtShort, weekStart, addDays } from "@/lib/dates";
 
 export default function Home() {
@@ -28,9 +28,9 @@ export default function Home() {
   const t = todayISO();
   const wEnd = addDays(weekStart(t), 6);
 
-  const overdue = flat.filter((n) => n.status !== "done" && n.due_date && n.due_date < t);
-  const today = flat.filter((n) => n.status !== "done" && n.due_date === t);
-  const week = flat.filter((n) => n.status !== "done" && n.due_date && n.due_date >= t && n.due_date <= wEnd);
+  const overdue = flat.filter((n) => isOpen(n) && n.due_date && n.due_date < t);
+  const today = flat.filter((n) => isOpen(n) && n.due_date === t);
+  const week = flat.filter((n) => isOpen(n) && n.due_date && n.due_date >= t && n.due_date <= wEnd);
   const habitsToday = flat.filter((n) => n.kind === "habit");
   const habitDone = habitsToday.filter((h) => habitLogs.some((l) => l.node_id === h.id && l.log_date === t));
 
