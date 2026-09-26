@@ -6,7 +6,7 @@ import { useStore } from "@/components/Store";
 import { supabaseBrowser } from "@/lib/supabase/client";
 import Donut from "@/components/Donut";
 import Bar from "@/components/Bar";
-import { statsOf, flatten } from "@/lib/tree";
+import { statsOf, flatten, isOpen } from "@/lib/tree";
 import { todayISO, weekStart, addDays, fmtShort, fmtDate } from "@/lib/dates";
 
 export default function Review() {
@@ -35,7 +35,7 @@ export default function Review() {
 
   const leaves = useMemo(() => flatten(allTree).filter((n) => n.kids.length === 0), [allTree]);
   const doneThis = leaves.filter((n) => n.status === "done" && n.done_at && n.done_at.slice(0, 10) >= ws && n.done_at.slice(0, 10) <= we);
-  const missed = leaves.filter((n) => n.status !== "done" && n.due_date && n.due_date >= ws && n.due_date <= we);
+  const missed = leaves.filter((n) => isOpen(n) && n.due_date && n.due_date >= ws && n.due_date <= we);
   const habitPct = (() => {
     const habits = leaves.filter((n) => n.kind === "habit");
     if (!habits.length) return 0;
