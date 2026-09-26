@@ -77,3 +77,12 @@ export function pathTo(list: TreeNode[], id: string, acc: TreeNode[] = []): Tree
 export function cascadeIds(n: TreeNode): string[] {
   return [n.id, ...n.kids.flatMap(cascadeIds)];
 }
+
+/**
+ * مهمة "مفتوحة" = عمل ما زال قائما: todo او doing.
+ * done منجزة، و dropped ملغاة. الاثنتان لا تظهران كمتأخرة ولا كمستحقة.
+ * كان الشرط قبل 26 سبتمبر 2026 هو status !== "done"، وهذا كان يعرض الملغى كمتأخر.
+ */
+export function isOpen(n: { status: string }): boolean {
+  return n.status === "todo" || n.status === "doing";
+}
