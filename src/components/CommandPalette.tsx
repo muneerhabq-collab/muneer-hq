@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Search, CornerDownLeft, Check } from "lucide-react";
 import { useStore } from "./Store";
-import { flatten } from "@/lib/tree";
+import { flatten, isOpen } from "@/lib/tree";
 import { fmtShort } from "@/lib/dates";
 
 type Item = { id: string; label: string; hint?: string; run: () => void; color?: string };
@@ -38,7 +38,7 @@ export default function CommandPalette({ onClose, openAdd }: { onClose: () => vo
       })),
     ];
     const tasks: Item[] = flatten(allTree)
-      .filter((n) => n.status !== "done")
+      .filter((n) => isOpen(n))
       .map((n) => {
         const area = areas.find((a) => a.id === n.area_id);
         return {
